@@ -2,13 +2,18 @@
 
 This repo is just a small playground for testing out small scripts related to making working with Nuxeo a bit simpler. 
 
+## Links
+
+REST API for Nuxeo
+
+- https://doc.nuxeo.com/rest-api/1/data-model-endpoint/
+
 ## Scripts
 
 - __src/generate.ts__
->  This script loads a DocType via the REST API and creates a TS type from it.
-  It's just a small experiment for now, looking to see what can be done, and it could be expanded on in the future if we find any use for it.
-
-  One could probably get away with using just the `Schema` for now, instead at loading the `DocType`, but on the other hand, I guess we should/could use other information from the `DocType` to get a better generated type instead of only using the fields from the `Schema`.
+  This script loads a DocType via the REST API and creates a TS type from it.
+  It's just a small experiment for now, looking to see what can be done, and it could be expanded on in the future if we find any use for it.<br/>
+  One could probably get away with using just the `Schema` for this instead at loading the whole `DocType`, but on the other hand I guess we should/could use other information from the `DocType` to get a better generated type instead of only using the fields from the `Schema`.
 
 
 ## Assets
