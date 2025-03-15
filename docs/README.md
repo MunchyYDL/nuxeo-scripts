@@ -1,4 +1,4 @@
-# nuxeo_scripts
+# nuxeo-scripts
 
 This repo is just a small playground for testing out small scripts related to making working with Nuxeo a bit simpler. 
 
