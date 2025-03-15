@@ -1,0 +1,20 @@
+{
+	"name": "nuxeo_scripts",
+	"version": "1.0.0",
+	"description": "Just a simple repo with some scripts aimed at making working with Nuxeo simpler.",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"keywords": [],
+	"author": "",
+	"license": "private",
+	"type": "module",
+	"devDependencies": {
+		"@biomejs/biome": "1.9.4",
+		"@types/node": "22.13.10",
+		"typescript": "5.8.2"
+	},
+	"volta": {
+		"node": "23.10.0"
+	}
+}

@@ -1,0 +1,119 @@
+{
+	"entity-type": "docType",
+	"name": "Contract",
+	"parent": "File",
+	"facets": [
+		"Versionable",
+		"NXTag",
+		"Publishable",
+		"Commentable",
+		"HasRelatedText",
+		"Downloadable"
+	],
+	"schemas": [
+		{
+			"entity-type": "schema",
+			"name": "contract",
+			"prefix": "contract",
+			"@prefix": "contract",
+			"fields": {
+				"product": "string",
+				"quantity": "long",
+				"negotiator": "string",
+				"total": "double",
+				"price": "double",
+				"deliveryDate": "date"
+			}
+		},
+		{
+			"entity-type": "schema",
+			"name": "common",
+			"fields": {
+				"icon-expanded": "string",
+				"icon": "string"
+			}
+		},
+		{
+			"entity-type": "schema",
+			"name": "file",
+			"fields": {
+				"content": "blob"
+			}
+		},
+		{
+			"entity-type": "schema",
+			"name": "dublincore",
+			"prefix": "dc",
+			"@prefix": "dc",
+			"fields": {
+				"description": "string",
+				"language": "string",
+				"coverage": "string",
+				"valid": "date",
+				"creator": "string",
+				"modified": "date",
+				"lastContributor": "string",
+				"rights": "string",
+				"expired": "date",
+				"format": "string",
+				"created": "date",
+				"title": "string",
+				"issued": "date",
+				"nature": "string",
+				"subjects": "string[]",
+				"contributors": "string[]",
+				"source": "string",
+				"publisher": "string"
+			}
+		},
+		{
+			"entity-type": "schema",
+			"name": "uid",
+			"fields": {
+				"uid": "string",
+				"major_version": "long",
+				"minor_version": "long"
+			}
+		},
+		{
+			"entity-type": "schema",
+			"name": "files",
+			"fields": {
+				"files": {
+					"type": "complex[]",
+					"fields": {
+						"file": "blob"
+					}
+				}
+			}
+		},
+		{
+			"entity-type": "schema",
+			"name": "facetedTag",
+			"prefix": "nxtag",
+			"@prefix": "nxtag",
+			"fields": {
+				"tags": {
+					"type": "complex[]",
+					"fields": {
+						"label": "string",
+						"username": "string"
+					}
+				}
+			}
+		},
+		{
+			"entity-type": "schema",
+			"name": "relatedtext",
+			"fields": {
+				"relatedtextresources": {
+					"type": "complex[]",
+					"fields": {
+						"relatedtextid": "string",
+						"relatedtext": "string"
+					}
+				}
+			}
+		}
+	]
+}

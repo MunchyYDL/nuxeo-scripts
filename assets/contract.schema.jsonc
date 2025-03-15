@@ -1,0 +1,14 @@
+{
+	"entity-type": "schema",
+	"name": "contract",
+	"prefix": "contract",
+	"@prefix": "contract",
+	"fields": {
+		"product": "string",
+		"quantity": "long",
+		"negotiator": "string",
+		"total": "double",
+		"price": "double",
+		"deliveryDate": "date"
+	}
+}
